@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="sg">身高：</label>
+    <input type="text" id="sg">
+    <label for="tz">体重</label>
+    <input type="" id="tz">
+    <input type="button" value="计算" id="btn">
+    <input type="text" id="res" disabled>
+    <script>
+        btn.onclick = function () {
+            var height = sg.value * 1;
+            var weight = tz.value * 1;
+            var b = (height - 108) * 2;                     //身材换算公式
+            if (height <= 108) {                            //正常身高至少大于108
+                res.value = '宁成年人？'
+            } else {
+                if (weight < b + 10 && weight > b - 10) {   //正负10的误差范围
+                    res.value = ('标准身材');
+                } else if (weight > b + 10) {
+                    res.value = ('胖了');
+                } else if (weight < b - 10) {
+                    res.value = ('瘦了');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

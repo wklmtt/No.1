@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var month = 10; //月薪
+        var total = month * 12; //年薪
+
+        var year = 2;
+        while (year <= 10) {
+            month = month * 1.05; //月薪每年增幅5%
+            total += month * 12; //年薪=月薪*12
+            year++;
+        }
+        console.log(month.toFixed(3) + 'k', total.toFixed(3) + 'k');
+    </script>
+</body>
+
+</html>
