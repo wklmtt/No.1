@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid red;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    行：<input type="text" id="num1">
+    列：<input type="text" id="num2">
+    <input type="button" value="生成" id="btn">
+
+    <table>
+        <tbody id="output"></tbody>
+    </table>
+
+    <script>
+        btn.onclick = function () {
+            // 当点击的时候吧tbody的内容清空
+            output.innerHTML = '';
+            var n1 = num1.value * 1;
+            var n2 = num2.value * 1;
+            // 循环生成 行 tr
+            for (var i = 0; i < n1; i++) {
+                var tr = '<tr>'
+                // 循环生成 列 td
+                for (var j = 0; j < n2; j++) {
+                    tr += '<td></td>'
+                }
+                tr += '</tr>';
+                // output.innerHTML =  tr ，那么tr 会把 原来  output.innerHTML 的覆盖掉
+                // 把tr 追加到tbody里面
+                output.innerHTML += tr;
+            }
+        }
+    </script>
+</body>
+
+</html>

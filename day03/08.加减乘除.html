@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //求出1-1/2+1/3-1/4+1/5.......1/100的和
+        var sum = 0;
+        for (var i = 1; i <= 3; i++) { // 1 -1/2 + 1/3
+            if (i % 2 !== 0) { // 判断是奇数，进行加法运算
+                sum = sum + 1 / i;
+            } else if (i % 2 === 0) { // 判断是偶数，进行减法运算
+                sum = sum - 1 / i;
+            }
+        }
+        console.log(sum);
+    </script>
+</body>
+
+</html>

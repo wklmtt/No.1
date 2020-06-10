@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (num = 10000; num <= 99999; num++) { // 限制10000~99999区间
+            var a = num % 10; //个位
+            var b = parseInt(num / 10) % 10; //十位
+            var c = parseInt(num / 100) % 10; //百位
+            var d = parseInt(num / 1000) % 10; //千位
+            var e = parseInt(num / 10000) % 10; //万位
+            if (a == e && b == d && (b == a + 1) && (c == b + 1)) {
+                // [1] 第一位和倒数第一位相等
+                // [2] 第二位和倒数第二位相等
+                // [3] 第二位等于第一位数加一
+                // [4] 第三位等于第二位数加一
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+
+</html>
