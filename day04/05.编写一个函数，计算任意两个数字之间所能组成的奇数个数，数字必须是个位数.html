@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day04_05</title>
+</head>
+
+<body>
+    <script>
+        //编写一个函数，计算任意两个数字之间所能组成的奇数个数，数字必须是个位数
+        function fun(a, b) {
+            var n;
+            var num = [];
+            var num1 = ["" + a + b, "" + b + a];
+            if (a < b) {
+                n = a + 1;
+                while (n != b) {
+                    num.push(n);
+                    n = n + 1;
+                }
+            } else {
+                n = b + 1;
+                while (n != a) {
+                    num.push(n);
+                    n = n + 1;
+                }
+            }
+            num1.push("" + a + b);
+            for (var m = 0; m < arguments.length; m++) {
+                for (var i = 0; i < num.length; i++) {
+                    num1.push("" + arguments[m] + num[i]);
+                    num1.push("" + num[i] + arguments[m]);
+                    if (i != num.length - 1 && m != num.length - 1) {
+                        num1.push("" + num[i] + num[i + 1]);
+                        num1.push("" + num[i + 1] + num[i]);
+                    }
+                }
+            }
+            document.write(a + "-" + b + "能组成的奇数:" + "<br>");
+            for (var j = 0; j < num1.length; j++) {
+                if (num1[j] % 2 != 0) {
+                    document.write(num1[j] + (j == num1.length - 1 ? "" : "<br>"));
+                }
+            }
+        }
+        fun(Number(prompt("输入第一个数")), Number(prompt("输入第二个数")))
+    </script>
+</body>
+
+</html>
