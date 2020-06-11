@@ -33,7 +33,7 @@
 
 - day04
 <br>
-<a href="https://github.com/wklmtt/No.1/blob/master/day04/01.%E8%AE%A1%E7%AE%97%E5%92%8C%E3%80%81%E5%B7%AE%E3%80%81%E7%A7%AF%E3%80%81%E5%95%86.html">day04-01</a>
+<a href="file:///C:/Users/94309/Desktop/day04/01.%E8%AE%A1%E7%AE%97%E5%92%8C%E3%80%81%E5%B7%AE%E3%80%81%E7%A7%AF%E3%80%81%E5%95%86.html">day04-01</a>
 <br>
 <a href="https://github.com/wklmtt/No.1/blob/master/day04/02.%E8%AE%A1%E7%AE%97%E4%B8%89%E4%B8%AA%E6%95%B0%E5%AD%97%E7%9A%84%E5%A4%A7%E5%B0%8F.html">day04-02</a>
 <br>
