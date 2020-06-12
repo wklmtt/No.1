@@ -29,6 +29,7 @@
 <a href="https://github.com/wklmtt/No.1/blob/master/day02/08.%E5%88%A4%E6%96%AD%E5%A5%87%E5%81%B6%E6%95%B0.html">day02-08</a>
 <br>
 <a href="https://github.com/wklmtt/No.1/blob/master/day02/09.%E5%88%A4%E6%96%AD%E6%95%B0%E5%AD%97%E8%8C%83%E5%9B%B4.html">day02-09</a>
+[1]https://github.com/wklmtt/No.1/blob/master/day02/09.%E5%88%A4%E6%96%AD%E6%95%B0%E5%AD%97%E8%8C%83%E5%9B%B4.html
 <br>
 
 - day04
